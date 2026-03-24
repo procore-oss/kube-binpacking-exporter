@@ -1,5 +1,6 @@
 # Kube Binpacking Exporter (KBE)
 
+[![Hypercommit](https://img.shields.io/badge/Hypercommit-DB2475)](https://hypercommit.com/kube-binpacking-exporter)
 [![CI](https://github.com/sherifabdlnaby/kube-binpacking-exporter/actions/workflows/ci.yaml/badge.svg?branch=main)](https://github.com/sherifabdlnaby/kube-binpacking-exporter/actions/workflows/ci.yaml)
 [![Release](https://github.com/sherifabdlnaby/kube-binpacking-exporter/actions/workflows/release.yaml/badge.svg)](https://github.com/sherifabdlnaby/kube-binpacking-exporter/actions/workflows/release.yaml)
 [![CodeQL](https://img.shields.io/badge/codeql-analyzed-blue?logo=github&logoColor=white)](https://github.com/sherifabdlnaby/kube-binpacking-exporter/security/code-scanning?query=tool%3ACodeQL)
