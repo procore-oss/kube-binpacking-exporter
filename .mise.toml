@@ -1,5 +1,14 @@
 [tools]
-go            = "1.26.0"
-helm          = "4.1.1"
-golangci-lint = "2.9.0"
-helm-docs     = "1.14.2"
+go            = "1"
+helm          = "4"
+golangci-lint = "2"
+helm-docs     = "1"
+pinact = "3"
+
+
+[settings]
+lockfile = true
+# Use GH CLI for GITHUB_TOKEN to avoid hitting rate limit.
+github.gh_cli_tokens = true
+# Otherwise fallback to Git Credentials
+github.use_git_credentials = true

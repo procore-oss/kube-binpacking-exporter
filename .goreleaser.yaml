@@ -41,7 +41,7 @@ checksum:
 dockers_v2:
   - dockerfile: Dockerfile.release
     images:
-      - "ghcr.io/sherifabdlnaby/kube-binpacking-exporter"
+      - "ghcr.io/procore-oss/kube-binpacking-exporter"
     tags:
       - "{{ .Tag }}"
       - "sha-{{ .FullCommit }}"
@@ -56,19 +56,12 @@ dockers_v2:
       "org.opencontainers.image.description": "Exporter for pre-computed Kubernetes Binpacking Efficiency Metrics"
       "org.opencontainers.image.version": "{{ .Version }}"
       "org.opencontainers.image.source": "{{ .GitURL }}"
-      "org.opencontainers.image.url": "https://github.com/sherifabdlnaby/kube-binpacking-exporter"
-      "org.opencontainers.image.documentation": "https://github.com/sherifabdlnaby/kube-binpacking-exporter/blob/main/README.md"
+      "org.opencontainers.image.url": "https://github.com/procore-oss/kube-binpacking-exporter"
+      "org.opencontainers.image.documentation": "https://github.com/procore-oss/kube-binpacking-exporter/blob/main/README.md"
       "org.opencontainers.image.licenses": "MIT"
-      "org.opencontainers.image.vendor": "sherifabdlnaby"
+      "org.opencontainers.image.vendor": "procore-oss"
       "org.opencontainers.image.created": "{{ .Date }}"
       "org.opencontainers.image.revision": "{{ .FullCommit }}"
-      # Artifact Hub
-      "io.artifacthub.package.readme-url": "https://raw.githubusercontent.com/sherifabdlnaby/kube-binpacking-exporter/main/README.md"
-      "io.artifacthub.package.license": "MIT"
-      "io.artifacthub.package.category": "monitoring-logging"
-      "io.artifacthub.package.keywords": "kubernetes,binpacking,exporter,monitoring,metrics"
-      "io.artifacthub.package.prerelease": "{{ if .Prerelease }}true{{ else }}false{{ end }}"
-      "io.artifacthub.package.maintainers": '[{"name":"sherifabdlnaby","email":"sherifabdlnaby@gmail.com"}]'
     labels:
       "org.opencontainers.image.title": "{{ .ProjectName }}"
       "org.opencontainers.image.description": "Exporter for pre-computed Kubernetes Binpacking Efficiency Metrics"
@@ -133,7 +126,7 @@ changelog:
 # ── GitHub Release ───────────────────────────────────────────────────────
 release:
   github:
-    owner: sherifabdlnaby
+    owner: procore-oss
     name: kube-binpacking-exporter
   draft: false
   prerelease: auto
@@ -142,7 +135,7 @@ release:
     ## `{{.Tag}}` 🚀
 
   footer: |
-    **Full Changelog**: https://github.com/sherifabdlnaby/kube-binpacking-exporter/compare/{{.PreviousTag}}...{{.Tag}}
+    **Full Changelog**: https://github.com/procore-oss/kube-binpacking-exporter/compare/{{.PreviousTag}}...{{.Tag}}
 
     ---
 
@@ -151,7 +144,7 @@ release:
     **Helm (Recommended):**
     ```bash
     helm install kube-binpacking-exporter \
-      oci://ghcr.io/sherifabdlnaby/charts/kube-binpacking-exporter \
+      oci://ghcr.io/procore-oss/charts/kube-binpacking-exporter \
       --version {{.Version}}
     ```
 
@@ -161,7 +154,7 @@ release:
     **Docker:**
     ```bash
     docker run -v ~/.kube/config:/kubeconfig:ro \
-      ghcr.io/sherifabdlnaby/kube-binpacking-exporter:{{.Tag}} \
+      ghcr.io/procore-oss/kube-binpacking-exporter:{{.Tag}} \
       --kubeconfig=/kubeconfig
     ```
 
@@ -170,23 +163,23 @@ release:
     # Docker image
     cosign verify \
       --certificate-oidc-issuer=https://token.actions.githubusercontent.com \
-      --certificate-identity-regexp="https://github.com/sherifabdlnaby/kube-binpacking-exporter/.*" \
-      ghcr.io/sherifabdlnaby/kube-binpacking-exporter:{{.Tag}}
+      --certificate-identity-regexp="https://github.com/procore-oss/kube-binpacking-exporter/.*" \
+      ghcr.io/procore-oss/kube-binpacking-exporter:{{.Tag}}
 
     # Helm chart
     cosign verify \
       --certificate-oidc-issuer=https://token.actions.githubusercontent.com \
-      --certificate-identity-regexp="https://github.com/sherifabdlnaby/kube-binpacking-exporter/.*" \
-      ghcr.io/sherifabdlnaby/charts/kube-binpacking-exporter:{{.Version}}
+      --certificate-identity-regexp="https://github.com/procore-oss/kube-binpacking-exporter/.*" \
+      ghcr.io/procore-oss/charts/kube-binpacking-exporter:{{.Version}}
     ```
 
     **Verify provenance & SBOM attestations:**
     ```bash
     # Docker image provenance
-    gh attestation verify oci://ghcr.io/sherifabdlnaby/kube-binpacking-exporter:{{.Tag}} \
-      --owner sherifabdlnaby
+    gh attestation verify oci://ghcr.io/procore-oss/kube-binpacking-exporter:{{.Tag}} \
+      --owner procore-oss
 
     # Binary artifacts
     gh attestation verify <binary-file> \
-      --owner sherifabdlnaby
+      --owner procore-oss
     ```
