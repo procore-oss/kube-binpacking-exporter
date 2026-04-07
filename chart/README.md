@@ -16,7 +16,7 @@ Exporter for pre-computed Kubernetes Binpacking Effecieny Metrics metrics. Track
 ```bash
 # Install from OCI registry
 helm install kube-binpacking-exporter \
-  oci://ghcr.io/sherifabdlnaby/charts/kube-binpacking-exporter
+  oci://ghcr.io/procore-oss/charts/kube-binpacking-exporter
 
 # Install from local chart
 helm install kube-binpacking-exporter ./chart
@@ -33,14 +33,14 @@ helm install kube-binpacking-exporter ./chart
 
 ```bash
 helm install kube-binpacking-exporter \
-  oci://ghcr.io/sherifabdlnaby/charts/kube-binpacking-exporter \
+  oci://ghcr.io/procore-oss/charts/kube-binpacking-exporter \
   --version 0.0.0
 ```
 
 ### From Source
 
 ```bash
-git clone https://github.com/sherifabdlnaby/kube-binpacking-exporter.git
+git clone https://github.com/procore-oss/kube-binpacking-exporter.git
 cd kube-binpacking-exporter
 helm install kube-binpacking-exporter ./chart
 ```
@@ -72,7 +72,7 @@ helm uninstall kube-binpacking-exporter
 | fullnameOverride | string | `""` | Override the full release name |
 | image.digest | string | `""` | Image digest (e.g. `sha256:abc123...`). Takes precedence over `tag`. Injected automatically by the release workflow |
 | image.pullPolicy | string | `"IfNotPresent"` | Image pull policy. Valid values: `Always`, `IfNotPresent`, `Never` |
-| image.repository | string | `"ghcr.io/sherifabdlnaby/kube-binpacking-exporter"` | Container image repository |
+| image.repository | string | `"ghcr.io/procore-oss/kube-binpacking-exporter"` | Container image repository |
 | image.tag | string | `""` | Image tag. Defaults to the chart's `appVersion` when empty. Ignored if `digest` is set |
 | imagePullSecrets | list | `[]` | Image pull secrets for private registries |
 | labelGroups | list | `[]` | Label groups for combination grouping. Each entry is a comma-separated list of label keys defining one group. Nodes are grouped by the tuple of values for all keys in the group. Example: `["topology.kubernetes.io/zone,node.kubernetes.io/instance-type", "topology.kubernetes.io/zone"]` |
@@ -346,7 +346,7 @@ MIT - See [LICENSE](../LICENSE) for details.
 
 ## Links
 
-- **GitHub**: https://github.com/sherifabdlnaby/kube-binpacking-exporter
-- **Issues**: https://github.com/sherifabdlnaby/kube-binpacking-exporter/issues
-- **Docker Images**: https://ghcr.io/sherifabdlnaby/kube-binpacking-exporter
-- **Helm Charts**: https://ghcr.io/sherifabdlnaby/charts/kube-binpacking-exporter
+- **GitHub**: https://github.com/procore-oss/kube-binpacking-exporter
+- **Issues**: https://github.com/procore-oss/kube-binpacking-exporter/issues
+- **Docker Images**: https://ghcr.io/procore-oss/kube-binpacking-exporter
+- **Helm Charts**: https://ghcr.io/procore-oss/charts/kube-binpacking-exporter

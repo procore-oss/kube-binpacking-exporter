@@ -1,4 +1,4 @@
-module github.com/sherifabdlnaby/kube-binpacking-exporter
+module github.com/procore-oss/kube-binpacking-exporter
 
 go 1.26.1
 

@@ -178,11 +178,11 @@ No controller-runtime, no operator SDK — just the essentials.
 **Flow**: PR + label → merge → auto-tag → release (Docker + Helm + binaries + changelog)
 
 **Artifacts**:
-- **Docker**: `ghcr.io/sherifabdlnaby/kube-binpacking-exporter:v1.2.3` (linux/amd64, linux/arm64)
-- **Helm**: `oci://ghcr.io/sherifabdlnaby/charts/kube-binpacking-exporter:1.2.3`
+- **Docker**: `ghcr.io/procore-oss/kube-binpacking-exporter:v1.2.3` (linux/amd64, linux/arm64)
+- **Helm**: `oci://ghcr.io/procore-oss/charts/kube-binpacking-exporter:1.2.3`
 - **Binaries**: Linux/macOS/Windows (multiple architectures)
 
-**Install**: `helm install kube-binpacking-exporter oci://ghcr.io/sherifabdlnaby/charts/kube-binpacking-exporter`
+**Install**: `helm install kube-binpacking-exporter oci://ghcr.io/procore-oss/charts/kube-binpacking-exporter`
 
 **Manual** (if needed): `git tag v1.0.0 && git push origin v1.0.0`
 

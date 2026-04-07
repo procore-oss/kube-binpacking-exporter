@@ -15,5 +15,5 @@ maintainers:
   - name: sherifabdlnaby
     url: https://github.com/sherifabdlnaby
 sources:
-  - https://github.com/sherifabdlnaby/kube-binpacking-exporter
-home: https://github.com/sherifabdlnaby/kube-binpacking-exporter
+  - https://github.com/procore-oss/kube-binpacking-exporter
+home: https://github.com/procore-oss/kube-binpacking-exporter

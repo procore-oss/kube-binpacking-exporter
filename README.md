@@ -1,12 +1,11 @@
 # Kube Binpacking Exporter (KBE)
 
-[![CI](https://github.com/sherifabdlnaby/kube-binpacking-exporter/actions/workflows/ci.yaml/badge.svg?branch=main)](https://github.com/sherifabdlnaby/kube-binpacking-exporter/actions/workflows/ci.yaml)
-[![Release](https://github.com/sherifabdlnaby/kube-binpacking-exporter/actions/workflows/release.yaml/badge.svg)](https://github.com/sherifabdlnaby/kube-binpacking-exporter/actions/workflows/release.yaml)
-[![CodeQL](https://img.shields.io/badge/codeql-analyzed-blue?logo=github&logoColor=white)](https://github.com/sherifabdlnaby/kube-binpacking-exporter/security/code-scanning?query=tool%3ACodeQL)
-[![GitHub Release](https://img.shields.io/github/v/release/sherifabdlnaby/kube-binpacking-exporter)](https://github.com/sherifabdlnaby/kube-binpacking-exporter/releases/latest)
-[![Artifact Hub](https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/kube-binpacking-exporter-chart)](https://artifacthub.io/packages/search?repo=kube-binpacking-exporter-chart)
-[![Kubernetes](https://img.shields.io/badge/kubernetes-%3E%3D%201.29-blue?logo=kubernetes&logoColor=white)](https://github.com/sherifabdlnaby/kube-binpacking-exporter)
-[![License](https://img.shields.io/github/license/sherifabdlnaby/kube-binpacking-exporter)](LICENSE)
+[![CI](https://github.com/procore-oss/kube-binpacking-exporter/actions/workflows/ci.yaml/badge.svg?branch=main)](https://github.com/procore-oss/kube-binpacking-exporter/actions/workflows/ci.yaml)
+[![Release](https://github.com/procore-oss/kube-binpacking-exporter/actions/workflows/release.yaml/badge.svg)](https://github.com/procore-oss/kube-binpacking-exporter/actions/workflows/release.yaml)
+[![CodeQL](https://img.shields.io/badge/codeql-analyzed-blue?logo=github&logoColor=white)](https://github.com/procore-oss/kube-binpacking-exporter/security/code-scanning?query=tool%3ACodeQL)
+[![GitHub Release](https://img.shields.io/github/v/release/procore-oss/kube-binpacking-exporter)](https://github.com/procore-oss/kube-binpacking-exporter/releases/latest)
+[![Kubernetes](https://img.shields.io/badge/kubernetes-%3E%3D%201.29-blue?logo=kubernetes&logoColor=white)](https://github.com/procore-oss/kube-binpacking-exporter)
+[![License](https://img.shields.io/github/license/procore-oss/kube-binpacking-exporter)](LICENSE)
 
 Exports accurate and easy to aggregate **allocated** (Requests) to **allocatable** resources ratios across your Kubernetes cluster, per node group (via label combinations), or per-node.
 
@@ -27,7 +26,7 @@ You need the combination of `kube-state-metrics`, `kubelet` and `cAdvisor` metri
 ## Helm (Recommended):
 ```bash
 helm install kube-binpacking-exporter \
-  oci://ghcr.io/sherifabdlnaby/charts/kube-binpacking-exporter \
+  oci://ghcr.io/procore-oss/charts/kube-binpacking-exporter \
   --version <check-releases-use-without-a-v>
 ```
 <sub>Helm chart version has no `v` prefix. <sub>

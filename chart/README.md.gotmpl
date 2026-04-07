@@ -16,7 +16,7 @@ Exporter for pre-computed Kubernetes Binpacking Effecieny Metrics metrics. Track
 ```bash
 # Install from OCI registry
 helm install kube-binpacking-exporter \
-  oci://ghcr.io/sherifabdlnaby/charts/kube-binpacking-exporter
+  oci://ghcr.io/procore-oss/charts/kube-binpacking-exporter
 
 # Install from local chart
 helm install kube-binpacking-exporter ./chart
@@ -33,14 +33,14 @@ helm install kube-binpacking-exporter ./chart
 
 ```bash
 helm install kube-binpacking-exporter \
-  oci://ghcr.io/sherifabdlnaby/charts/kube-binpacking-exporter \
+  oci://ghcr.io/procore-oss/charts/kube-binpacking-exporter \
   --version {{ template "chart.appVersion" . }}
 ```
 
 ### From Source
 
 ```bash
-git clone https://github.com/sherifabdlnaby/kube-binpacking-exporter.git
+git clone https://github.com/procore-oss/kube-binpacking-exporter.git
 cd kube-binpacking-exporter
 helm install kube-binpacking-exporter ./chart
 ```
@@ -298,7 +298,7 @@ MIT - See [LICENSE](../LICENSE) for details.
 
 ## Links
 
-- **GitHub**: https://github.com/sherifabdlnaby/kube-binpacking-exporter
-- **Issues**: https://github.com/sherifabdlnaby/kube-binpacking-exporter/issues
-- **Docker Images**: https://ghcr.io/sherifabdlnaby/kube-binpacking-exporter
-- **Helm Charts**: https://ghcr.io/sherifabdlnaby/charts/kube-binpacking-exporter
+- **GitHub**: https://github.com/procore-oss/kube-binpacking-exporter
+- **Issues**: https://github.com/procore-oss/kube-binpacking-exporter/issues
+- **Docker Images**: https://ghcr.io/procore-oss/kube-binpacking-exporter
+- **Helm Charts**: https://ghcr.io/procore-oss/charts/kube-binpacking-exporter
