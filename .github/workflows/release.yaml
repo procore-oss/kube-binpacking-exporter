@@ -268,7 +268,7 @@ jobs:
 
       # ── Artifact Hub metadata ────────────────────────────────────────
       - name: Install oras
-        uses: oras-project/setup-oras@v1
+        uses: oras-project/setup-oras@v2
 
       - name: Push Artifact Hub metadata
         run: |
