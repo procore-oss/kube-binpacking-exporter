@@ -3,6 +3,11 @@
   "type": "object",
   "additionalProperties": false,
   "properties": {
+    "global": {
+      "type": "object",
+      "additionalProperties": true,
+      "description": "Allowing global parameters for sub-charting"
+    },
     "replicaCount": {
       "type": "integer",
       "minimum": 1,
