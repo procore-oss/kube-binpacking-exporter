@@ -1,4 +1,4 @@
-FROM golang:1.26-alpine AS builder
+FROM golang:1.27-alpine AS builder
 
 WORKDIR /build
 
@@ -25,7 +25,7 @@ RUN CGO_ENABLED=0 make build \
     DATE=${DATE} && \
     mv kube-binpacking-exporter /kube-binpacking-exporter
 
-FROM gcr.io/distroless/static-debian12:nonroot
+FROM gcr.io/distroless/static-debian13:nonroot
 
 COPY --from=builder /kube-binpacking-exporter /kube-binpacking-exporter
 

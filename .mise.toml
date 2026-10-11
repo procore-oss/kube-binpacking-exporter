@@ -3,7 +3,7 @@ go            = "1"
 helm          = "4"
 golangci-lint = "2"
 helm-docs     = "1"
-pinact = "3"
+pinact = "5"
 
 
 [settings]

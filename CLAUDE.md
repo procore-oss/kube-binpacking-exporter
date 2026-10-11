@@ -22,7 +22,7 @@ Prometheus exporter that monitors Kubernetes binpacking efficiency. Compares pod
 | `main.go` | Entry point, HTTP server | Flag parsing, signal handling, `/metrics`, `/healthz`, `/readyz`, `/sync` endpoints |
 | `kubernetes.go` | Kube client setup | `setupKubernetes()` - config resolution, informer factories (node + pod), cache sync with progress logging |
 | `collector.go` | Prometheus collector | `Collect()` - computes metrics, `calculatePodRequest()` - init container logic |
-| `Dockerfile` | Container image | Multi-stage: `golang:1.25-alpine` → `distroless/static-debian12:nonroot` |
+| `Dockerfile` | Container image | Multi-stage: `golang:1.27-alpine` → `distroless/static-debian13:nonroot` |
 | `chart/` | Helm chart | RBAC, ServiceMonitor, published to OCI registry at ghcr.io |
 | `.github/workflows/` | CI/CD | `ci.yaml` - build/vet/lint/test, `release.yaml` - PR merge → semver tag → GoReleaser + Docker + Helm OCI push (single workflow) |
 
